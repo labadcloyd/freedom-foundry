@@ -32,7 +32,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${display.variable} ${body.variable} ${mono.variable}`}>
+    <html
+      lang='en'
+      className={`${display.variable} ${body.variable} ${mono.variable}`}
+    >
+      <head>
+        <link rel='icon' type='image/x-icon' href='/logo.ico' />
+      </head>
       <body>{children}</body>
     </html>
   );
