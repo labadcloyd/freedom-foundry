@@ -1,10 +1,12 @@
-import { Nav } from "@/components/nav";
-import { Hero } from "@/components/hero";
-import { TradeTicker } from "@/components/trade-ticker";
-import { Services } from "@/components/services";
-import { Process } from "@/components/process";
-import { Cta } from "@/components/cta";
-import { Footer } from "@/components/footer";
+import {
+  CTA,
+  Footer,
+  Hero,
+  Process,
+  Services,
+  TradeTicker,
+} from "@/components/layouts";
+import Nav from "@/components/layouts/Navbar";
 
 export default function Home() {
   return (
@@ -14,7 +16,7 @@ export default function Home() {
       <TradeTicker />
       <Services />
       <Process />
-      <Cta />
+      <CTA />
       <Footer />
     </main>
   );
